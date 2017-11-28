@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>响应式原理</title>
+	<style>
+		/*div的公用样式*/
+		div{
+			height: 50px;
+		}
+		/*当屏幕宽度最大值不能超过400px*/
+		@media all and (max-width: 400px) {
+			div {
+				width: 100%;
+				background-color:red;
+			}
+		}
+		/*当屏幕宽度在400px~700px之间*/
+		@media all and (min-width: 400px) and (max-width: 700px) {
+			div {
+				width: 50%;
+				background-color:yellow;
+			}
+		}
+		/*当屏幕宽度不小于700px*/
+		@media all and (min-width: 700px)  {
+			div {
+				width: 20%;
+				background-color:blue;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>
